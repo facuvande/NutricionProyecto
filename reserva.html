@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3756f86c62.js" crossorigin="anonymous"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <title>MelanyNutricion: Aprende a comer</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="contenedorGeneral">
+        <header class="header">
+            <div class="logoHeader">
+                <a href="index.html"><img src="./img/m.png" alt="Logo de la pagina"></a>
+            </div>
+            <nav class="navMenu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menuIcon"><img src="./img/iconMenu.svg" alt=""></i>
+                </label>
+                <ul>
+                    <li><a href="./sobre_mi.html">Sobre mi</a></li>
+                    <li><a href="./index.html#serv">Servicios</a></li>
+                    <li><a href="./reserva.html" id="inpage">Reserva tu turno</a></li>
+                    <li><a href="https://wa.link/huadcs" target="_blank">Contactame</a></li>
+                    <li><a href="./tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!-- Contenido -->
+    <main>
+        <h1 class="h1About">Empezá hoy tu cambio, Reserva tu turno</h1>
+        <!-- Formulario que manda la info encriptada -->
+        <section class="reserva">
+        <form action="#" method="post">
+            <p>Nombre y Apellido</p>
+            <input type="text">
+            <p>Email</p>
+            <input type="email" placeholder="Correo Electronico">
+            <p>Teléfono</p>
+            <input type="text" placeholder="Cod.Area + Numero">
+            <p>Servicio</p>
+            <input type="text" placeholder="Planes de Alimentacion" readonly>
+            <br><br>
+            <p>Elige la modalidad</p>
+            <select name="modalidad" id="">
+                <option value="modalidad">Elige la modalidad</option>
+                <option value="presencial">Presencial</option>
+                <option value="virtual">Virtual</option>
+            </select>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar todo">
+        </form>
+        <section class="consultorio">
+        <h2>Consultorio</h2>
+            <!-- Api de Google Maps con direccion de consultorio -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7856.775520179562!2d-59.03201627550459!3d-34.11134834473458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb0bcf1a73d8ab%3A0xeb4342ba285669aa!2sDalma!5e0!3m2!1ses-419!2sar!4v1654539120488!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        </section>
+    </main>
+        <!-- Pie de pagina -->
+        <footer class="footer">
+            <h3>Mis redes sociales</h3>
+        <div>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+            <p>
+                Lic. Melany Garin
+                <br>
+                Copyright © 2022. Todos los derechos reservados
+            </p>
+    </footer>
+    </div>
+</body>
+</html>

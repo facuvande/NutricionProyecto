@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Hind+Siliguri:wght@300&family=Hind+Vadodara:wght@600&family=Mate+SC&display=swap');
+
+/* ---------------------- HEADER ---------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Hind Siliguri', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Grid */
+
+.contenedorGeneral {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    "header"
+    "primeraSeccion"
+    "segundaSeccion"
+    "terceraSeccion"
+    "footer";
+}
+
+.primeraSeccion { grid-area: primeraSeccion; }
+
+.segundaSeccion { grid-area: segundaSeccion; }
+
+.terceraSeccion { grid-area: terceraSeccion; }
+
+.logoHeader img{
+    width: 14rem;
+    transition: all 0.3s;
+    margin-top: 4px;
+}
+
+.logoHeader img:hover{
+    width: 14rem;
+    transform: scale(1.1);
+}
+
+.header{
+    grid-area: header;
+    background-color: #FFD1DC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem;
+}
+
+.navMenu ul{
+    display: flex;
+    align-items: center;
+}
+
+.navMenu li{
+    margin-right: 1.5rem;
+}
+
+#inpage{
+    color: #ffffff;
+}
+
+.navMenu a{
+    font-family: 'Hind Vadodara', sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+.navMenu a:hover{
+    border-bottom: 1px solid #000000;
+}
+
+.menuIcon img{
+    width: 45px;
+    height: 45px;
+}
+.menuIcon, #check{
+    display: none;
+}
+
+/* -------------------------------------------------MAIN------------------------------- */
+
+.ocultar{
+    display: none;
+}
+
+.wrap{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)),url(../img/slider11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.wrap-texto h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    color: #ffffff;
+}
+.wrap-texto .buttom{
+    background-color: #E38C8C;
+    padding: 5px;
+    margin-top: .5rem;
+    border: 1px black solid;
+    border-radius: 1.4rem;
+    text-align: center;
+}
+.buttom a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.subtitle{
+    font-family: 'Mate SC', serif;
+    background-color: #E38C8C;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+
+
+.boton{
+    color: #ffffff;
+    background-color: #E38C8C;
+    text-decoration: none;
+    padding: 1px;
+    border: 1px black solid;
+    border-radius: 10px;
+    
+}
+
+.cardContainer{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cardContainer .card{
+    width: 330px;
+    height: 420px;
+    border: 3px solid #dca2af;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.cardContainer .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardContainer .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.cardContainer .card h3{
+    font-weight: 600;
+}
+
+.cardContainer .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cardContainer .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+    
+}
+
+/* FOOTER */
+
+.footer{
+    grid-area: footer;
+    background-color: #dca2af;
+    color: #111;
+    text-align: center;
+    padding: 0.6rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    top: 1.3rem;
+    font-size: 1.5rem;
+}
+
+.footer h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.footer div i{
+    color: #111;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+.footer div i:hover{
+    color: #3b3a3a;
+}
+
+.footer p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* ABOUT */
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin-top: 20px;
+}
+.formacion{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin-top: 20px;
+}
+.about p,.aboutDer , .formacion p{
+    display: flex;
+    width: 40rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.about img, .formacion img{
+    width: 300px;
+    
+}
+.tm img{
+    width: 400px;
+}
+.tm p{
+    font-size: 18px;
+}
+
+.bottomAbout{
+    padding: .5rem;
+    margin-top: .7rem;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+}
+.bottomAbout:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.h1About{
+    font-size: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Reserva */
+.reserva{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+.reserva form{
+    margin: 2rem;
+    padding: 30px;
+    width: 20rem;
+    display: inline-block;
+    background-color: #E38C8C;
+    border-radius: 20px;
+}
+.reserva form p{
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+.reserva input,select{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.consultorio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.consultorio h2{
+    background-color: #E38C8C;
+    width: 95%;
+    text-align: center;
+    margin: 1.5rem;
+    color: #fff;
+}
+
+/* TIENDA */
+.h2Tienda{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.buy{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.buy div{
+    padding: 10px;
+    border: #E38C8C 2px solid;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.buy h2{
+    text-align: center;
+}
+
+.buy p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.buy button{
+    padding: .3rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.galeria img{
+    width: 25rem;
+    padding: 20px;
+    
+}
+.galeria p{
+    text-align: center;
+    align-items: center;
+    align-items: center;
+}
+
+
+/* Plan Alimentacion */
+.textPlanes{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* AtencionDomicilio */
+.textBeneficios{
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+}
+.beneficiosList{
+    font-size: 20px;
+    text-align: center;
+}
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.beneficios a{
+    padding: .3rem;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE DESING - MEDIA QUERY - 1109px */
+/* MOBILE LAST = MAX-WIDTH */
+@media (max-width: 1109px) {
+    .cardContainer{
+        display: flex;
+        
+        height: auto;
+    }
+    .reserva{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reserva form{
+        padding: 30px;
+        width: 25rem;
+        display: inline-block;
+        background-color: #E38C8C;
+        border-radius: 20px;
+    }
+    
+    .reserva form p{
+        color: #ffffff;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
+/* RESPONSIVE DESING - MEDIA QUERY - MOBILE */
+/* MOBILE LAST = MAX-WIDTH */
+/* Todo lo q ponga aca dentro va a pasar cuando tenga esta medida o menos */
+@media (max-width: 768px) {
+    .checkbtn{
+        display: block;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menuIcon{
+        display: block;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #E38C8C;
+        width: 100%;
+        height: 100%;
+        right: 0;
+    }
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .navMenu ul li:last-child {
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 0.25s;
+    }
+    .wrap-texto h1{
+        font-size: 4rem;
+    }
+    .about, .formacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .about img, .formacion img{
+        min-width: 40vw;
+        margin-bottom: 2rem;
+    }
+    .imgAbout{
+        width: 35vw;
+        
+    }
+    .buy{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 660px) {
+    .checkbtn{
+        display: block;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menuIcon{
+        display: block;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .navMenu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #E38C8C;
+        width: 100%;
+        height: 100%;
+        right: 0;
+    }
+    .navMenu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .navMenu ul li:last-child {
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 0.25s;
+    }
+    .wrap-texto h1{
+        font-size: 4rem;
+    }
+    .about, .formacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .about img, .formacion img{
+        min-width: 40vw;
+        margin-bottom: 2rem;
+    }
+    .imgAbout{
+        width: 35vw;
+        
+    }
+}
+
