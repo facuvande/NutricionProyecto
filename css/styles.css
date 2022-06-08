@@ -443,7 +443,7 @@
 /* RESPONSIVE DESING - MEDIA QUERY - MOBILE */
 /* MOBILE LAST = MAX-WIDTH */
 /* Todo lo q ponga aca dentro va a pasar cuando tenga esta medida o menos */
-@media (max-width: 768px) {
+@media (max-width: 420px) {
     .checkbtn{
         display: block;
     }
