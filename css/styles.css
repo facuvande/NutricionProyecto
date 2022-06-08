@@ -566,6 +566,9 @@
         width: 35vw;
         
     }
+    main, .aboutDer p{
+        width: 100vw;
+    }
 }
 
 
