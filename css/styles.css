@@ -502,7 +502,7 @@
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 320px) {
     .checkbtn{
         display: block;
     }
@@ -557,4 +557,5 @@
         
     }
 }
+
 
