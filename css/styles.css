@@ -55,6 +55,10 @@
     width: 100vw;
 }
 
+main{
+    margin-top: 5rem;
+}
+
 .navMenu ul{
     display: flex;
     align-items: center;
@@ -442,13 +446,11 @@
         font-size: 1.4rem;
     }
 }
-.a,s,s{
-    text-align: center;
-}
+
 /* RESPONSIVE DESING - MEDIA QUERY - MOBILE */
 /* MOBILE LAST = MAX-WIDTH */
 /* Todo lo q ponga aca dentro va a pasar cuando tenga esta medida o menos */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .checkbtn{
         display: block;
     }
@@ -505,6 +507,19 @@
     .buy{
         display: flex;
         flex-direction: column;
+        width: 100vw;
+    }
+    .buy img, .buy div{
+        width: 80%;
+    }
+    .consultorio{
+        width: 100vw;
+    }
+    .consultorio h2{
+        width: 80vw;
+    }
+    .consultorio iframe{
+        width: 100%;
     }
 }
 
@@ -582,6 +597,21 @@
     }
     .aboutDer p{
         max-width: 70vw;
+    }
+    .reserva form{
+        width: 100vw;
+    }
+    .consultorio{
+        width: 100vw;
+    }
+    .consultorio h2{
+        width: 80vw;
+    }
+    .consultorio iframe{
+        width: 100%;
+    }
+    .galeria img{
+        width: 100vw;
     }
 }
 
