@@ -228,7 +228,7 @@
 
 /* ABOUT */
 .about{
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -247,7 +247,6 @@
 }
 .about p,.aboutDer , .formacion p{
     display: flex;
-    width: 40rem;
     flex-direction: column;
     align-items: center;
     margin: 2rem;
@@ -443,7 +442,9 @@
         font-size: 1.4rem;
     }
 }
-
+.a,s,s{
+    text-align: center;
+}
 /* RESPONSIVE DESING - MEDIA QUERY - MOBILE */
 /* MOBILE LAST = MAX-WIDTH */
 /* Todo lo q ponga aca dentro va a pasar cuando tenga esta medida o menos */
@@ -507,7 +508,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
     h1{
         text-align: center;
     }
