@@ -512,7 +512,7 @@ main{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     .checkbtn{
         display: block;
     }
@@ -526,7 +526,6 @@ main{
         justify-content: space-between;
         cursor: pointer;
     }
-
     .navMenu ul{
         
         display: block;
@@ -534,8 +533,8 @@ main{
         top: 70px;
         left: -100%;
         background: #E38C8C;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         right: 0;
     }
     .navMenu ul li{
