@@ -52,7 +52,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 .navMenu ul{
@@ -93,7 +93,7 @@
 }
 
 .wrap{
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -443,9 +443,7 @@
         font-size: 1.4rem;
     }
 }
-.a,s,s{
-    text-align: center;
-}
+
 /* RESPONSIVE DESING - MEDIA QUERY - MOBILE */
 /* MOBILE LAST = MAX-WIDTH */
 /* Todo lo q ponga aca dentro va a pasar cuando tenga esta medida o menos */
@@ -509,7 +507,7 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 320px) {
     h1{
         text-align: center;
     }
