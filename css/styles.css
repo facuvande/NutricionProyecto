@@ -523,7 +523,7 @@ main{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 465px) {
     h1{
         text-align: center;
     }
