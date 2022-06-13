@@ -49,6 +49,10 @@
     justify-content: space-around;
     align-items: center;
     padding: .5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .navMenu ul{
