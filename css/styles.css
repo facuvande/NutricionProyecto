@@ -49,6 +49,10 @@
     justify-content: space-around;
     align-items: center;
     padding: .5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .navMenu ul{
@@ -83,6 +87,10 @@
 }
 
 /* -------------------------------------------------MAIN------------------------------- */
+
+main{
+    padding-top: 5rem;
+}
 
 .ocultar{
     display: none;
@@ -448,6 +456,7 @@
         display: block;
     }
     .header{
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -503,7 +512,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     .checkbtn{
         display: block;
     }
@@ -519,6 +528,7 @@
     }
 
     .navMenu ul{
+        
         display: block;
         position: fixed;
         top: 70px;
