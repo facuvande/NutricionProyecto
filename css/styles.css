@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Hind+Siliguri:wght@300&family=Hind+Vadodara:wght@600&family=Mate+SC&display=swap');
 
-/* ---------------------- HEADER ---------------------- */
+/* ---------------------- GLOBAL ---------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -30,17 +30,7 @@
 
 .terceraSeccion { grid-area: terceraSeccion; }
 
-.logoHeader img{
-    width: 14rem;
-    transition: all 0.3s;
-    margin-top: 4px;
-}
-
-.logoHeader img:hover{
-    width: 14rem;
-    transform: scale(1.1);
-}
-
+/* ///////////////////HEADER///////////////////////////// */
 .header{
     grid-area: header;
     background-color: #FFD1DC;
@@ -54,30 +44,29 @@
     top: 0;
     width: 100vw;
 }
-
-main{
-    margin-top: 5rem;
+.logoHeader img{
+    width: 14rem;
+    transition: all 0.3s;
+    margin-top: 4px;
 }
+.logoHeader img:hover{
+    width: 14rem;
+    transform: scale(1.1);
+}
+
 
 .navMenu ul{
     display: flex;
     align-items: center;
 }
-
 .navMenu li{
     margin-right: 1.5rem;
 }
-
-#inpage{
-    color: #ffffff;
-}
-
 .navMenu a{
     font-family: 'Hind Vadodara', sans-serif;
     color: #000000;
     font-size: 20px;
 }
-
 .navMenu a:hover{
     border-bottom: 1px solid #000000;
 }
@@ -90,14 +79,18 @@ main{
     display: none;
 }
 
-/* -------------------------------------------------MAIN------------------------------- */
-
-.ocultar{
-    display: none;
+#inpage{
+    color: #ffffff;
 }
 
+main{
+    margin-top: 5rem;
+}
+
+
+/* ///////////////////INDEXR///////////////////////////// */
+
 .wrap{
-    width: 100vw;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -123,7 +116,7 @@ main{
     text-decoration: none;
     color: #ffffff;
 }
-
+/* GLOBAL PARA SUBTITULOS */
 .subtitle{
     font-family: 'Mate SC', serif;
     background-color: #E38C8C;
@@ -133,8 +126,7 @@ main{
     margin-top: 20px;
 }
 
-
-
+/* BOTONES */
 .boton{
     color: #ffffff;
     background-color: #E38C8C;
@@ -143,6 +135,25 @@ main{
     border: 1px black solid;
     border-radius: 10px;
     
+}
+.bottomAbout{
+    padding: .5rem;
+    margin-top: .7rem;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+}
+.bottomAbout:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.about p,.aboutDer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    max-width: 45rem;
 }
 
 .cardContainer{
@@ -156,7 +167,6 @@ main{
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
 .cardContainer .card{
     width: 330px;
     height: 420px;
@@ -168,27 +178,22 @@ main{
     text-align: center;
     transition: all 1s;
 }
-
 .cardContainer .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-
 .cardContainer .card img{
     width: 330px;
     height: 220px;
 }
-
 .cardContainer .card h3{
     font-weight: 600;
 }
-
 .cardContainer .card p{
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
 }
-
 .cardContainer .card a{
     font-weight: 500;
     text-decoration: none;
@@ -196,43 +201,14 @@ main{
     
 }
 
-/* FOOTER */
-
-.footer{
-    grid-area: footer;
-    background-color: #dca2af;
-    color: #111;
-    text-align: center;
-    padding: 0.6rem;
-    margin-bottom: 1.3rem;
-    position: relative;
-    top: 1.3rem;
-    font-size: 1.5rem;
-}
-
-.footer h3{
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-
-.footer div i{
-    color: #111;
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-}
-.footer div i:hover{
-    color: #3b3a3a;
-}
-
-.footer p{
+/* //////////////////////// Seccion SobreMI////////////////////////////// */
+.title{
+    font-size: 50px;
     margin-top: 10px;
-    font-size: 14px;
+    text-align: center;
 }
 
-/* ABOUT */
 .about{
-    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -240,6 +216,7 @@ main{
     padding: .5rem;
     margin-top: 20px;
 }
+
 .formacion{
     width: 100%;
     display: flex;
@@ -249,7 +226,7 @@ main{
     padding: .5rem;
     margin-top: 20px;
 }
-.about p,.aboutDer , .formacion p{
+.formacion p{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,32 +237,8 @@ main{
 .about img, .formacion img{
     width: 300px;
 }
-.tm img{
-    width: 400px;
-}
-.tm p{
-    font-size: 18px;
-}
 
-.bottomAbout{
-    padding: .5rem;
-    margin-top: .7rem;
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
-    transition: all 0.5s;
-}
-.bottomAbout:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-.h1About{
-    font-size: 50px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-/* Reserva */
+/* --------------------------SECCION RESERVA---------------------------- */
 .reserva{
     display: flex;
     flex-direction: row;
@@ -328,7 +281,7 @@ main{
     color: #fff;
 }
 
-/* TIENDA */
+/* -----------------------------SECCION TIENDA------------------------------- */
 .h2Tienda{
     text-align: center;
     font-size: 1.5em;
@@ -342,23 +295,19 @@ main{
     justify-content: center;
     text-align: center;
 }
-
 .buy div{
     padding: 10px;
     border: #E38C8C 2px solid;
     border-radius: 10px;
     margin: 20px;
 }
-
 .buy h2{
     text-align: center;
 }
-
 .buy p{
     text-align: center;
     font-size: 1.3rem;
 }
-
 .buy button{
     padding: .3rem;
     margin-top: .5rem;
@@ -385,14 +334,13 @@ main{
 }
 
 
-/* Plan Alimentacion */
+/* ----SECCIONES PLAN ALIMENTACION - ATENCION DOMICILIO - ATENCION ONLINE------ */
 .textPlanes{
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
 }
 
-/* AtencionDomicilio */
 .textBeneficios{
     padding: 20px;
     margin-top: 10px;
@@ -418,8 +366,38 @@ main{
     margin-top: 2rem;
 }
 
+/* FOOTER */
+
+.footer{
+    grid-area: footer;
+    background-color: #dca2af;
+    color: #111;
+    text-align: center;
+    padding: 0.6rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    top: 1.3rem;
+    font-size: 1.5rem;
+}
+.footer h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer div i{
+    color: #111;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+.footer div i:hover{
+    color: #3b3a3a;
+}
+.footer p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 /* RESPONSIVE DESING - MEDIA QUERY - 1109px */
-/* MOBILE LAST = MAX-WIDTH */
+
 @media (max-width: 1109px) {
     .cardContainer{
         display: flex;
@@ -447,9 +425,8 @@ main{
     }
 }
 
-/* RESPONSIVE DESING - MEDIA QUERY - MOBILE */
-/* MOBILE LAST = MAX-WIDTH */
-/* Todo lo q ponga aca dentro va a pasar cuando tenga esta medida o menos */
+/* RESPONSIVE DESING - MEDIA QUERY - 850PX */
+
 @media (max-width: 850px) {
     .checkbtn{
         display: block;
@@ -464,7 +441,6 @@ main{
         justify-content: space-between;
         cursor: pointer;
     }
-
     .navMenu ul{
         display: block;
         position: fixed;
@@ -523,71 +499,11 @@ main{
     }
 }
 
+/* RESPONSIVE DESIGN - MOBILE - 465PX */
+
 @media (max-width: 465px) {
     h1{
         text-align: center;
-    }
-    .checkbtn{
-        display: block;
-    }
-    .header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header{
-        width: 100vw;
-    }
-    body{
-        width: 100vw;
-    }
-    footer{
-        width: 100vw;
-    }
-    .menuIcon{
-        display: block;
-        justify-content: space-between;
-        cursor: pointer;
-    }
-
-    .navMenu ul{
-        display: block;
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        background: #E38C8C;
-        width: 100vw;
-        height: 100vh;
-        right: 0;
-    }
-    .navMenu ul li{
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    .navMenu ul li:last-child {
-        background: none;
-        padding: 1rem;
-    }
-    #check:checked ~ ul{
-        left: 0;
-        transition: all 0.25s;
-    }
-    .wrap-texto h1{
-        font-size: 4rem;
-    }
-    .about, .formacion{
-        display: flex;
-        flex-direction: column;
-    }
-    .about img, .formacion img{
-        min-width: 40vw;
-        margin-bottom: 2rem;
-    }
-    .imgAbout{
-        width: 35vw;
-        
     }
     main, .aboutDer p{
         width: 100vw;
@@ -600,15 +516,6 @@ main{
     }
     .reserva form{
         width: 100vw;
-    }
-    .consultorio{
-        width: 100vw;
-    }
-    .consultorio h2{
-        width: 80vw;
-    }
-    .consultorio iframe{
-        width: 100%;
     }
     .galeria img{
         width: 100vw;
