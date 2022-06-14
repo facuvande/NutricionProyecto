@@ -52,7 +52,11 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
+}
+
+main{
+    margin-top: 5rem;
 }
 
 .navMenu ul{
@@ -93,7 +97,7 @@
 }
 
 .wrap{
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -228,7 +232,7 @@
 
 /* ABOUT */
 .about{
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -247,15 +251,14 @@
 }
 .about p,.aboutDer , .formacion p{
     display: flex;
-    width: 40rem;
     flex-direction: column;
     align-items: center;
     margin: 2rem;
+    max-width: 45rem;
 }
 
 .about img, .formacion img{
     width: 300px;
-    
 }
 .tm img{
     width: 400px;
@@ -443,13 +446,11 @@
         font-size: 1.4rem;
     }
 }
-.a,s,s{
-    text-align: center;
-}
+
 /* RESPONSIVE DESING - MEDIA QUERY - MOBILE */
 /* MOBILE LAST = MAX-WIDTH */
 /* Todo lo q ponga aca dentro va a pasar cuando tenga esta medida o menos */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .checkbtn{
         display: block;
     }
@@ -506,10 +507,23 @@
     .buy{
         display: flex;
         flex-direction: column;
+        width: 100vw;
+    }
+    .buy img, .buy div{
+        width: 80%;
+    }
+    .consultorio{
+        width: 100vw;
+    }
+    .consultorio h2{
+        width: 80vw;
+    }
+    .consultorio iframe{
+        width: 100%;
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 465px) {
     h1{
         text-align: center;
     }
@@ -581,6 +595,22 @@
     .aboutDer{
         width: 100vw;
     }
+    .aboutDer p{
+        max-width: 70vw;
+    }
+    .reserva form{
+        width: 100vw;
+    }
+    .consultorio{
+        width: 100vw;
+    }
+    .consultorio h2{
+        width: 80vw;
+    }
+    .consultorio iframe{
+        width: 100%;
+    }
+    .galeria img{
+        width: 100vw;
+    }
 }
-
-
