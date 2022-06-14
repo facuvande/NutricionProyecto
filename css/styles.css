@@ -60,12 +60,14 @@
     align-items: center;
 }
 .navMenu li{
+    border: none;
     margin-right: 1.5rem;
 }
 .navMenu a{
     font-family: 'Hind Vadodara', sans-serif;
     color: #000000;
     font-size: 20px;
+    text-decoration: none;
 }
 .navMenu a:hover{
     border-bottom: 1px solid #000000;
@@ -124,6 +126,7 @@ main{
     text-align: center;
     padding: 5px;
     margin-top: 20px;
+    font-weight: 600;
 }
 
 /* BOTONES */
@@ -204,6 +207,7 @@ main{
 /* //////////////////////// Seccion SobreMI////////////////////////////// */
 .title{
     font-size: 50px;
+    font-weight: 600;
     margin-top: 10px;
     text-align: center;
 }
@@ -285,8 +289,10 @@ main{
 .h2Tienda{
     text-align: center;
     font-size: 1.5em;
+    font-weight: 600;
     margin-top: .5rem;
 }
+
 
 .buy{
     display: flex;
@@ -315,24 +321,21 @@ main{
 }
 
 .galeria{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    width: 28vw;   
 }
 .galeria img{
-    width: 25rem;
-    padding: 20px;
-    
+    width: 100%;
 }
+
 .galeria p{
     text-align: center;
     align-items: center;
     align-items: center;
 }
 
+.carousel-caption h5{
+    font-weight: 600;
+}
 
 /* ----SECCIONES PLAN ALIMENTACION - ATENCION DOMICILIO - ATENCION ONLINE------ */
 .textPlanes{
@@ -378,8 +381,10 @@ main{
     position: relative;
     top: 1.3rem;
     font-size: 1.5rem;
+    z-index: 1;
 }
 .footer h3{
+    font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -488,6 +493,9 @@ main{
     .buy img, .buy div{
         width: 80%;
     }
+    .galeria{
+        width: 38vw;   
+    }
     .consultorio{
         width: 100vw;
     }
@@ -516,6 +524,9 @@ main{
     }
     .reserva form{
         width: 100vw;
+    }
+    .galeria{
+        width: 48vw;   
     }
     .galeria img{
         width: 100vw;
