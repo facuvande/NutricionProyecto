@@ -320,23 +320,96 @@ main{
     cursor: pointer;
 }
 
-.galeria{
-    width: 28vw;   
-}
-.galeria img{
+.fyq{
+    min-height: 40vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.faq-content{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.faq-container{
+    height: auto;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    border-bottom: 1px solid #afafaf;
+}
+.faq-collaps{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    background-color: white;
+    overflow: hidden;
 }
 
-.galeria p{
-    text-align: center;
-    align-items: center;
-    align-items: center;
+.first{
+    border-top: 1px solid #E38C8C;
 }
 
-.carousel-caption h5{
+.pregunta{
+    font-size: 22px;
     font-weight: 600;
 }
+.pregunta.active{
+    color: rgb(35,113,231);
+}
 
+.faq-answer{
+    overflow: hidden;
+    transition: 0.5s;
+    height: 0;
+}
+.faq-answer p{
+    padding: 10px 40px;
+    box-sizing: border-box;
+    font-size: 15   px;
+}
+
+.open{
+    height: 100px;
+    transform: translateY(0);
+}
+.arrow-container{
+    width: 40px;
+    height: 30px;
+    position: relative;
+}
+
+.up .line{
+    transform: translate(0%, -50%) rotate(-45deg);
+}
+.up .line:nth-of-type(2){
+    transform: translate(0%, -50%) rotate(45deg);
+}
+
+.line{
+    height: 1px;
+    width: 50%;
+    background-color: #121212;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(0%, -50%) rotate(45deg);
+}
+.line:nth-of-type(2){
+    right: 8%;
+    left: auto;
+    transform: translate(0%, -50%) rotate(-45deg);
+}
 /* ----SECCIONES PLAN ALIMENTACION - ATENCION DOMICILIO - ATENCION ONLINE------ */
 .textPlanes{
     text-align: center;
