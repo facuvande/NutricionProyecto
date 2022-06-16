@@ -292,6 +292,31 @@ main{
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #ffffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #121212;
+    background-color: transparent;
+}
+.contactoEnviar{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: .5rem;
+    padding: 10px 40px;
+    background-color: #db5e5e;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.contactoEnviar:hover{
+    background-color: #de6b6b;
 }
 
 .consultorio{
