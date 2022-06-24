@@ -1,0 +1,29 @@
+.textPlanes{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    .textBeneficios{
+        padding: 20px;
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+        width: 80%;
+    }
+    .beneficiosList{
+        font-size: 20px;
+        text-align: center;
+    }
+    a{
+        padding: .3rem;
+        margin-top: 2rem;
+    }
+}

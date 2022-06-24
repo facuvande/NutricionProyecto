@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Hind+Siliguri:wght@300&family=Hind+Vadodara:wght@600&family=Mate+SC&display=swap');
+
+@import './variables/variables';
+@import './variables/extend';
+@import './variables/mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: $Hind;
+    box-sizing: border-box;
+}
+
+/* Grid */
+
+.contenedorGeneral {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    "header"
+    "primeraSeccion"
+    "segundaSeccion"
+    "terceraSeccion"
+    "footer";
+}
+
+.primeraSeccion { grid-area: primeraSeccion; }
+
+.segundaSeccion { grid-area: segundaSeccion; }
+
+.terceraSeccion { grid-area: terceraSeccion; }
+
+
+@import './secciones/header';
+@import './secciones/wsp';
+@import './secciones/index';
+@import './secciones/sobremi';
+@import './secciones/reserva';
+@import './secciones/tienda';
+@import './secciones/otras';
+@import './secciones/footer';
+@import './secciones/responsive';

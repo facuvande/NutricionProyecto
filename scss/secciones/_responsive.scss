@@ -1,0 +1,224 @@
+@media (max-width: 1579px){
+    .cuerpo{
+        .productoInfoContenedor{
+            margin-left: 10rem;
+        }
+    }
+}
+
+/* RESPONSIVE DESING - MEDIA QUERY - 1109px */
+
+@media (max-width: 1109px) {
+    .cardContainer{
+        display: flex;
+        height: auto;
+    }
+    .reserva{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        form{
+            padding: 30px;
+            width: 25rem;
+            display: inline-block;
+            background-color: $BackgroundBoton;
+            border-radius: 20px;
+            p{
+                color: #ffffff;
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .cuerpo{
+        .productoInfoContenedor{
+            margin-left: 9rem;
+            .button{
+                font-size: 15px;
+            }
+        }
+        .product-media-container{
+            .productoMediaWrap{
+                display: none;
+            }
+            .productoImg{
+                height: 85%;
+            }
+        }
+        
+    }
+    
+}
+
+// RESPONSIVE DESING - MEDIA QUERY - 850PX 
+
+@media (max-width: 850px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .navMenu{
+            ul{
+                display: block;
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                background: #E38C8C;
+                width: 100vw;
+                height: 100vh;
+                right: 0;
+                li{
+                    padding: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                    &:last-child {
+                        background: none;
+                        padding: 1rem;
+                    }
+                }
+            }
+            #check:checked ~ ul{
+                left: 0;
+                transition: all 0.25s;
+            }
+            .checkbtn{
+                display: block;
+            }
+            .menuIcon{
+                display: block;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .wrap{
+        .wrap-texto{
+            h1{
+                font-size: 4.5rem;
+            }
+        }
+    }
+    
+
+    .about, .formacion{
+        display: flex;
+        flex-direction: column;
+        img{
+            min-width: 40vw;
+            margin-bottom: 2rem;
+        }
+        .imgAbout{
+            width: 35vw;
+        }
+    }
+
+    .buy{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        img,div{
+            width: 80%;
+        }
+    }
+
+    .galeria{
+        width: 38vw;   
+    }
+    .consultorio{
+        width: 100vw;
+        h2{
+            width: 80vw;
+        }
+        iframe{
+            width: 100%;
+        }
+    }
+    
+    .cuerpo{
+        flex-direction: column;
+        .productoInfoContenedor{
+            width: 100%;
+            margin-left: 2rem;
+        }
+        .grandeImgWrap{
+            display: none;
+        }
+    }
+    .footer{
+        .footerContainer{
+            padding: 2rem;
+            flex-direction: column;
+            .footerContenido{
+                width: 100%;
+                padding: 2rem 0;
+                border-bottom: 1px solid #2a2a2a;
+                justify-content: center;
+                align-items: center;
+                &:nth-of-type(1){
+                    align-items: flex-start;
+                }
+                &:nth-of-type(3){
+                    border-bottom: none;
+                    padding: 0;
+                }
+            }
+            .footerMenu{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                border-bottom: 1px solid #2a2a2a;
+                .footerContenido{
+                    &:nth-last-of-type(1){
+                        width: 45%;
+                        align-items: flex-start;
+                        border-bottom: none;
+                    }
+                    &:nth-last-of-type(2){
+                        width: 45%;
+                        align-items: flex-start;
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+/* RESPONSIVE DESIGN - MOBILE - 465PX */
+
+@media (max-width: 465px) {
+    .wrap{
+        .wrap-texto{
+            h1{
+                text-align: center;
+                font-size: 5rem;
+            }
+        }
+    }
+    
+    main, .aboutDer p{
+        width: 100vw;
+    }
+    .aboutDer{
+        width: 100vw;
+        p{
+            max-width: 70vw;
+        }
+    }
+    
+    .reserva form{
+        width: 100vw;
+    }
+    .galeria{
+        width: 48vw;
+        img{
+            width: 100vw;
+        }   
+    }
+}

@@ -1,0 +1,53 @@
+.header{
+    grid-area: header;
+    background-color: $BackgroundHeader;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    .logoHeader img{
+        width: 14rem;
+        transition: all 0.3s;
+        margin-top: 4px;
+        &:hover{
+            width: 14rem;
+            transform: scale(1.1);
+        }
+    }
+    .navMenu{
+        ul{
+            display: flex;
+            align-items: center;
+        }
+        li{
+            border: none;
+            margin-right: 1.5rem;
+        }
+        a{
+            font-family: $HindV;
+            color: $ColorA;
+            font-size: 20px;
+            text-decoration: none;
+            &:hover{
+                border-bottom: 1px solid #111;
+            }
+        }
+        .menuIcon{
+                display: none;
+            img{
+                width: 45px;
+                height: 45px;
+            }
+        }
+        #check{
+            display: none;
+        }
+    } 
+}
+

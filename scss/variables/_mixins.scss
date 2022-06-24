@@ -1,0 +1,6 @@
+@mixin title($tamano,$margintop){
+    font-size: $tamano;
+    font-weight: 600;
+    margin-top: $margintop;
+    text-align: center;
+}

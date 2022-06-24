@@ -1,0 +1,253 @@
+.h2Tienda{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.buy{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    div{
+        padding: 10px;
+        border: $BackgroundBoton 2px solid;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    button{
+        padding: .3rem;
+        margin-top: .5rem;
+        cursor: pointer;
+    }
+}
+
+.fyq{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .faq-content{
+        width: 60%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .faq-container{
+            height: auto;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+            transition: 0.5s;
+            border-bottom: 1px solid #afafaf;
+            .faq-collaps{
+                height: 80px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 40px;
+                box-sizing: border-box;
+                background-color: white;
+                overflow: hidden;
+                .pregunta{
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                .pregunta.active{
+                    color: rgb(35,113,231);
+                }
+            }
+            .first{
+                border-top: 1px solid $BackgroundBoton;
+            }
+            
+        }
+    }
+}
+
+.faq-answer{
+    overflow: hidden;
+    transition: 0.5s;
+    height: 0;
+}
+.faq-answer p{
+    padding: 10px 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.open{
+    height: 100px;
+    transform: translateY(0);
+}
+.arrow-container{
+    width: 40px;
+    height: 30px;
+    position: relative;
+}
+
+.up .line{
+    transform: translate(0%, -50%) rotate(-45deg);
+    &:nth-of-type(2){
+        transform: translate(0%, -50%) rotate(45deg);
+    }
+}
+
+.line{
+    height: 1px;
+    width: 50%;
+    background-color: #121212;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(0%, -50%) rotate(45deg);
+    &:nth-of-type(2){
+        right: 8%;
+        left: auto;
+        transform: translate(0%, -50%) rotate(-45deg);
+    }
+}
+
+
+.cuerpo{
+    height: 100vh;
+    width: 100%;
+    padding: 0 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .product-media-container{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        .grandeImgWrap{
+            height: 700px;
+        }
+        .productoMediaWrap{
+            height: 700px;
+            width: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            .chicaImgWrap{
+                overflow: hidden;
+                width: 100%;
+                height: 19%;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .productoImg{
+            height: 100%;
+        }
+    }
+    .productoInfoContenedor{
+        width: 40%;
+        margin-left: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        .productoInfo{
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #f2f2f2;
+            width: 100%;
+            .venta{
+                text-transform: uppercase;
+                color: #999;
+                font-size: 15px;
+                margin-bottom: 1rem;
+            }
+            .productoTitulo{
+                font-size: 32px;
+                margin-bottom: 0.5rem;
+            }
+        }
+        .tamTitulo{
+            margin-bottom: 1rem;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #999;
+        }
+        .productoTamContenedor{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #f2f2f2;
+            .productoTam{
+                height: 40px;
+                width: 13%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                font-weight: 600;
+                border: 2px solid #121212;
+                cursor: pointer;
+            }
+        }
+        .button{
+            width: 100%;
+            height: 70px;
+            background-color: #121212;
+            color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 24px;
+            margin-bottom: 5rem;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        .collaps{
+            width: 100%;
+            padding: 2rem 0;
+            border-top: 1px solid #999;
+            position: relative;
+            &:after{
+                content: "+";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                color: #999;
+                font-size: 20px;
+            }
+            &:last-of-type{
+                border-bottom: 1px solid #999;
+            }
+        }
+    }
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked + label{
+    background-color: #121212;
+    color: #f2f2f2;
+}
