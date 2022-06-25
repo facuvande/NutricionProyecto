@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Hind+Siliguri:wght@300&family=Hind+Vadodara:wght@600&family=Mate+SC&display=swap');
 
 @import './variables/variables';
+@import './base/reset';
 @import './variables/extend';
 @import './variables/mixins';
-
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    font-family: $Hind;
-    box-sizing: border-box;
-}
 
 /* Grid */
 

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://facuvande.github.io/NutricionProyecto/</loc>
+  <lastmod>2022-06-25T15:07:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://facuvande.github.io/NutricionProyecto/index.html</loc>
+  <lastmod>2022-06-25T15:07:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://facuvande.github.io/NutricionProyecto/pages/sobre_mi.html</loc>
+  <lastmod>2022-06-25T15:07:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://facuvande.github.io/NutricionProyecto/pages/reserva.html</loc>
+  <lastmod>2022-06-25T15:07:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://facuvande.github.io/NutricionProyecto/pages/tienda.html</loc>
+  <lastmod>2022-06-25T15:07:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://facuvande.github.io/NutricionProyecto/pages/plan_alimentacion.html</loc>
+  <lastmod>2022-06-25T15:07:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://facuvande.github.io/NutricionProyecto/pages/atencion_online.html</loc>
+  <lastmod>2022-06-25T15:07:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://facuvande.github.io/NutricionProyecto/pages/atencion_domicilio.html</loc>
+  <lastmod>2022-06-25T15:07:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://facuvande.github.io/NutricionProyecto/pages/guias.html</loc>
+  <lastmod>2022-06-25T15:07:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

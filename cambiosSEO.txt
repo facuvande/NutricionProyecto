@@ -3,3 +3,4 @@
 - Se agrego el meta Descripcion a cada html que dan una breve descripcion de lo que trata.
 - Se disminuyo la calidad de las imagenes mediante "OnlineImageTool" logrando disminuir drasticamente el peso del proyecto.
 - Se agregaron los alt de las imagenes para poder tener un mejor posicionamiento de SEO.
+- Se agrego el sitemap para ayudar al navegador.
