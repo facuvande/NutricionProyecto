@@ -205,12 +205,16 @@
     main, .aboutDer p{
         width: 100vw;
     }
-    .aboutDer{
-        width: 100vw;
-        p{
-            max-width: 70vw;
+    .about{
+        .aboutDer{
+            margin: 0;
+            width: 100vw;
+            p{
+                max-width: 70vw;
+            }
         }
     }
+    
     
     .reserva form{
         width: 100vw;

@@ -90,7 +90,7 @@
   z-index: 100; }
   .btn-wsp:hover {
     text-decoration: none;
-    color: #fff;
+    color: #0df053;
     background-color: #fff; }
 
 #inpage {
@@ -721,9 +721,10 @@ input[type="radio"]:checked + label {
     font-size: 5rem; }
   main, .aboutDer p {
     width: 100vw; }
-  .aboutDer {
+  .about .aboutDer {
+    margin: 0;
     width: 100vw; }
-    .aboutDer p {
+    .about .aboutDer p {
       max-width: 70vw; }
   .reserva form {
     width: 100vw; }
