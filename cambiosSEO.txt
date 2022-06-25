@@ -1,2 +1,3 @@
 - Se agrego el meta Keywords donde se agregaron palabras claves para posicionar mejor la pagina respecto al SEO.
 - Se modificarlos los title , ahora siguen el formato "NombreMarca" | "Seccion" para implementar buenas practicas y que el usuario sepa en que seccion esta de la pagina.
+- Se agrego el meta Descripcion a cada html que dan una breve descripcion de lo que trata.
