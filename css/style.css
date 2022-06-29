@@ -115,7 +115,6 @@ main {
     background-color: #E38C8C;
     padding: 5px;
     margin-top: .5rem;
-    border: 1px black solid;
     border-radius: 1.4rem;
     text-align: center; }
     .wrap .wrap-texto .buttom a {
@@ -129,7 +128,6 @@ main {
   background-color: #E38C8C;
   text-decoration: none;
   padding: 1px;
-  border: 1px black solid;
   border-radius: 10px; }
   .boton a {
     color: #fff; }
@@ -181,7 +179,8 @@ main {
     .cardContainer .card p {
       padding: 0 1rem;
       font-size: 16px;
-      font-weight: 300; }
+      font-weight: 300;
+      margin-bottom: 2rem; }
     .cardContainer .card a {
       font-weight: 500;
       text-decoration: none;
@@ -302,9 +301,12 @@ main {
     text-align: center;
     font-size: 1.3rem; }
   .buy button {
+    border: none;
     padding: .3rem;
     margin-top: .5rem;
     cursor: pointer; }
+    .buy button:hover {
+      background-color: #dca2af; }
 
 .fyq {
   min-height: 40vh;
@@ -712,7 +714,12 @@ input[type="radio"]:checked + label {
       .footer .footerContainer .footerMenu .footerContenido:nth-last-of-type(2) {
         width: 45%;
         align-items: flex-start;
-        border-bottom: none; } }
+        border-bottom: none; }
+  .fyq .faq-content .faq-container .faq-collaps .pregunta {
+    font-size: 20px; }
+  .faq-answer p {
+    padding: 10px 0;
+    font-size: 15px; } }
 
 /* RESPONSIVE DESIGN - MOBILE - 465PX */
 @media (max-width: 465px) {
@@ -731,4 +738,9 @@ input[type="radio"]:checked + label {
   .galeria {
     width: 48vw; }
     .galeria img {
-      width: 100vw; } }
+      width: 100vw; }
+  .fyq .faq-content .faq-container .faq-collaps .pregunta {
+    font-size: 15px; }
+  .faq-answer p {
+    padding: 10px 0;
+    font-size: 10px; } }

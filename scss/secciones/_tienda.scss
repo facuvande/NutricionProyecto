@@ -25,9 +25,13 @@
         font-size: 1.3rem;
     }
     button{
+        border: none;
         padding: .3rem;
         margin-top: .5rem;
         cursor: pointer;
+        &:hover{
+            background-color: $BackgroundFooter;
+        }
     }
 }
 

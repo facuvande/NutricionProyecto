@@ -186,6 +186,23 @@
             }
         }
     }
+
+    .fyq{
+        .faq-content{
+            .faq-container{
+                .faq-collaps{
+                    .pregunta{
+                        font-size: 20px;
+
+                    }
+                }
+            }
+        }
+    }  
+    .faq-answer p{
+        padding: 10px 0;
+        font-size: 15px;
+    }
     
 }
 
@@ -224,5 +241,22 @@
         img{
             width: 100vw;
         }   
+    }
+
+    .fyq{
+        .faq-content{
+            .faq-container{
+                .faq-collaps{
+                    .pregunta{
+                        font-size: 15px;
+
+                    }
+                }
+            }
+        }
+    }  
+    .faq-answer p{
+        padding: 10px 0;
+        font-size: 10px;
     }
 }
