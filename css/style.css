@@ -7,6 +7,13 @@
   font-family: "Hind Siliguri", sans-serif;
   box-sizing: border-box; }
 
+body::-webkit-scrollbar {
+  width: 12px;
+  background: #FFD1DC; }
+
+body::-webkit-scrollbar-thumb {
+  background: #E38C8C; }
+
 .subtitle {
   font-family: 'Mate SC', serif;
   background-color: #E38C8C;
