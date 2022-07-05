@@ -693,6 +693,7 @@ input[type="radio"]:checked + label {
     .consultorio iframe {
       width: 100%; }
   .cuerpo {
+    margin-top: 4rem;
     flex-direction: column; }
     .cuerpo .productoInfoContenedor {
       width: 100%;
