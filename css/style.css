@@ -114,19 +114,24 @@ main {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slider11.jpg);
   background-size: cover;
   background-position: center; }
-  .wrap .wrap-texto h1 {
-    font-family: "Dancing Script", cursive;
-    font-size: 6rem;
-    color: #fff; }
-  .wrap .wrap-texto .buttom {
-    background-color: #E38C8C;
-    padding: 5px;
-    margin-top: .5rem;
-    border-radius: 1.4rem;
-    text-align: center; }
-    .wrap .wrap-texto .buttom a {
+  .wrap .wrap-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .wrap .wrap-texto h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: 6rem;
+      color: #fff; }
+    .wrap .wrap-texto .buttom {
+      background-color: #E38C8C;
+      padding: 6px;
+      margin-top: .5rem;
+      border-radius: 1.4rem;
+      text-align: center;
       text-decoration: none;
       color: #fff; }
+      .wrap .wrap-texto .buttom:hover {
+        background-color: #dca2af; }
 
 /* GLOBAL PARA SUBTITULOS */
 /* BOTONES */
