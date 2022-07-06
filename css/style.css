@@ -746,8 +746,6 @@ input[type="radio"]:checked + label {
     width: 100vw; }
     .about .aboutDer p {
       max-width: 70vw; }
-  .reserva form {
-    width: 100vw; }
   .galeria {
     width: 48vw; }
     .galeria img {
